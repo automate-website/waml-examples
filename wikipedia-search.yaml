@@ -1,0 +1,12 @@
+#%WAML 0.2
+name: wikipedia-search
+steps:
+  - open: https://www.wikipedia.org
+  - ensure: form#search-form
+  - enter:
+        selector: input#searchInput
+        input: web-automation
+    click: button[type=submit]
+  - ensure:
+        selector: h1
+        text: Search results
