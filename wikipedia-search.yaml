@@ -6,7 +6,7 @@ steps:
   - enter:
         selector: input#searchInput
         input: web-automation
-    click: button[type=submit]
+  - click: button[type=submit]
   - ensure:
         selector: h1
         text: Search results
